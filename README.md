@@ -6,7 +6,7 @@ API REST automatique avec Spring Data REST pour la gestion de comptes bancaires.
 
 ## 🎬 Démo
 
-[![Demo Video](https://img.shields.io/badge/▶️-Voir_la_démo-red?style=for-the-badge)](https://www.youtube.com/watch?v=VOTRE_VIDEO_ID)
+https://github.com/user-attachments/assets/a8fb069b-f375-4290-a4dc-5c829ffe192d
 
 ## 📋 Fonctionnalités
 
