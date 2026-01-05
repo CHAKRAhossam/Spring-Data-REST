@@ -131,6 +131,52 @@ server.port=8082
 spring.data.rest.base-path=/api
 ```
 
+## 🧪 Tests avec cURL
+
+### Découverte de l'API
+```bash
+curl -X GET 'http://localhost:8082/api'
+```
+
+### Liste des comptes
+```bash
+curl -X GET 'http://localhost:8082/api/comptes'
+```
+
+### Recherche par type
+```bash
+curl -X GET 'http://localhost:8082/api/comptes/search/byType?t=EPARGNE'
+```
+
+### Projection solde uniquement
+```bash
+curl -X GET 'http://localhost:8082/api/comptes?projection=solde'
+```
+
+### Projection mobile (solde + type)
+```bash
+curl -X GET 'http://localhost:8082/api/comptes?projection=mobile'
+```
+
+### Créer un compte
+```bash
+curl -X POST 'http://localhost:8082/api/comptes' \
+  -H 'Content-Type: application/json' \
+  -d '{"solde": 5000, "dateCreation": "2026-01-05", "type": "COURANT"}'
+```
+
+### Modifier un compte
+```bash
+curl -X PUT 'http://localhost:8082/api/comptes/1' \
+  -H 'Content-Type: application/json' \
+  -d '{"solde": 7500, "dateCreation": "2026-01-05", "type": "EPARGNE"}'
+```
+
+### Supprimer un compte
+```bash
+curl -X DELETE 'http://localhost:8082/api/comptes/1'
+```
+
 ## 🔍 Exemple de Réponse JSON
 
 ```json
