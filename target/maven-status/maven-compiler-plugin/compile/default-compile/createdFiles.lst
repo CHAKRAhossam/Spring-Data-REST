@@ -1,0 +1,9 @@
+ma\rest\spring\entities\TypeCompte.class
+ma\rest\spring\entities\ClientProjection.class
+ma\rest\spring\entities\CompteProjection1.class
+ma\rest\spring\entities\Compte.class
+ma\rest\spring\entities\CompteProjection2.class
+ma\rest\spring\MsBanqueApplication.class
+ma\rest\spring\repositories\ClientRepository.class
+ma\rest\spring\entities\Client.class
+ma\rest\spring\repositories\CompteRepository.class
